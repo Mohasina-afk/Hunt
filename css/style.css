@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,li {
+    list-style: none;
+}
+
+a,a:hover,a:focus {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+
+.title h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #111111;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.title p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    width: 570px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              menu-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+nav{
+    position: absolute !important;
+    z-index: 9999;
+    width: 100%;
+    border: 1px solid rgb(254, 198, 0, .3);
+}
+.navbar{
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 0;
+}
+
+nav .navbar-brand{
+    padding: 30px 0 !important;
+}
+
+nav ul li a{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    margin-left: 30px;
+    position: relative;
+    transition: .4s;
+}
+
+nav ul li a:after{
+    position: absolute;
+    bottom: -45px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: #fec600;
+    content: "";
+    transition: .4s;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+nav ul li a:hover{
+    color: #fec600;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              menu-part css end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              banner-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#banner-part .banner1{
+    background: url(../images/banner.png)no-repeat center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+#banner-part .banner1 .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+}
+
+#banner-part .banner1 .text{
+    text-align: center;
+    padding-top: 245px;
+    padding-bottom: 188px;
+}
+
+#banner-part .banner1 .text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+#banner-part .banner1 .text h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 55px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fec600;
+}
+
+#banner-part .banner1 .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: inherit;
+    color: #fff;
+    width: 545px;
+    margin: 10px auto;
+}
+
+#banner-part .banner1 .text a{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: #fec600;
+    border: 1px solid #fec600;
+    color: #111111;
+    padding: 10px 20px;
+    margin-top: 50px;
+    transition: .4s;
+}
+
+#banner-part .banner1 .text a:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              banner-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              about-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#about-part{
+    margin-top: 50px;
+}
+
+#about-part .img{
+    width: 370px;
+    height: 370px;
+    border-radius: 50%;
+    border: 1px solid #545454;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 270px;
+    position: relative;
+}
+
+#about-part .item{
+    position: relative;
+    left: 2px;
+    background: #eeeeee;
+    text-align: right;
+    padding: 35px;
+    margin-top: 105%;
+    margin-right: 10px;
+    transition: .4s;
+}
+
+#about-part .item:hover{
+     -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);   
+}
+
+#about-part .item h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #111111;
+    margin-left: -3px;
+}
+
+#about-part .item p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #444444;
+    margin-top: 15px;
+    margin-left: -30px;
+    width: 300px;
+}
+
+#about-part .item .shape{
+    position: absolute;
+    top: 50%;
+    right: -38px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+
+
+
+#about-part .img .item1{
+    position: absolute;
+    top: -60%;
+    left: 2px;
+    background: #eeeeee;
+    text-align: center;
+    padding: 30px;
+    transition: .4s;
+}
+
+#about-part .img .item1:hover{
+     -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);   
+}
+
+#about-part .img .item1 h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+#about-part .img .item1 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #444444;
+    margin-top: 15px;
+    width: 300px;
+}
+
+#about-part .img .item1 .shape{
+    position: absolute;
+    bottom: -22%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+
+
+#about-part .img .item2{
+    position: absolute;
+    bottom: -60%;
+    left: 2px;
+    background: #eeeeee;
+    text-align: center;
+    padding: 30px;
+    transition: .4s;
+}
+
+#about-part .img .item2:hover{
+    -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
+}
+
+#about-part .img .item2 h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+#about-part .img .item2 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #444444;
+    margin-top: 15px;
+    width: 300px;
+}
+
+#about-part .img .item2 .shape{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+
+
+
+#about-part .item3{
+    position: relative;
+    left: 2px;
+    background: #eeeeee;
+    text-align: left;
+    padding: 35px;
+    margin-top: 105%;
+    margin-left: 25px;
+    transition: .4s;
+}
+
+#about-part .item3:hover{
+     -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
+-moz-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
+box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);   
+}
+
+#about-part .item3 h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+#about-part .item3 p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #444444;
+    margin-top: 15px;
+    width: 275px;
+}
+
+#about-part .item3 .shape{
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 40px;
+    height: 40px;
+    background: #eeeeee;
+    border-radius: 5px;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              about-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              portfolio-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#portfolio-part{
+    margin-top: 270px;
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              portfolio-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
