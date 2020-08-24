@@ -97,19 +97,31 @@ nav ul li a:hover{
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
-#banner-part .banner1 .overlay{
+#banner-part .banner2{
+    background: url(../images/banner1.png)no-repeat center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+#banner-part .banner3{
+    background: url(../images/banner2.png)no-repeat center;
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+#banner-part .overlay{
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .7);
 }
 
-#banner-part .banner1 .text{
+#banner-part .text{
     text-align: center;
     padding-top: 245px;
     padding-bottom: 188px;
 }
 
-#banner-part .banner1 .text h2{
+#banner-part .text h2{
     font-family: 'Raleway', sans-serif;
     font-size: 36px;
     font-weight: 300;
@@ -117,7 +129,7 @@ nav ul li a:hover{
     color: #fff;
 }
 
-#banner-part .banner1 .text h1{
+#banner-part .text h1{
     font-family: 'Raleway', sans-serif;
     font-size: 55px;
     font-weight: bold;
@@ -125,7 +137,7 @@ nav ul li a:hover{
     color: #fec600;
 }
 
-#banner-part .banner1 .text p{
+#banner-part .text p{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -135,7 +147,7 @@ nav ul li a:hover{
     margin: 10px auto;
 }
 
-#banner-part .banner1 .text a{
+#banner-part .text a{
     display: inline-block;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
@@ -149,11 +161,48 @@ nav ul li a:hover{
     transition: .4s;
 }
 
-#banner-part .banner1 .text a:hover{
+#banner-part .text a:hover{
     background: transparent;
     color: #fff;
     border: 1px solid #fff;
 }
+
+#banner-part .prev{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    z-index: 9999;
+    transition: .4s;
+}
+
+#banner-part .next{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transition: .4s;
+}
+
+#banner-part .prev:hover,
+#banner-part .next:hover{
+    background: #fec600; 
+}
+
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
               banner-part css  end
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -176,24 +225,35 @@ nav ul li a:hover{
     position: relative;
 }
 
-#about-part .item{
+#about-part .img .overlay {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+#about-part .item4{
     position: relative;
     left: 2px;
     background: #eeeeee;
     text-align: right;
     padding: 35px;
-    margin-top: 105%;
+    margin-top: 100%;
     margin-right: 10px;
     transition: .4s;
 }
 
-#about-part .item:hover{
+#about-part .item4:hover{
      -webkit-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
 -moz-box-shadow: 0px 2px 9px -1px rgba(0,0,0,0.35);
 box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);   
 }
 
-#about-part .item h2{
+#about-part .item4 h2{
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -202,7 +262,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
     margin-left: -3px;
 }
 
-#about-part .item p{
+#about-part .item4 p{
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -212,7 +272,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
     width: 300px;
 }
 
-#about-part .item .shape{
+#about-part .item4 .shape{
     position: absolute;
     top: 50%;
     right: -38px;
@@ -221,6 +281,17 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
     height: 40px;
     background: #eeeeee;
     border-radius: 5px;
+}
+
+#about-part .item4 i{
+    position: absolute;
+    top: 47%;
+    left: 109%;
+    z-index: 999;
+}
+
+#about-part .item4:hover i{
+    color: #fec600;
 }
 
 
@@ -260,7 +331,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
 
 #about-part .img .item1 .shape{
     position: absolute;
-    bottom: -22%;
+    bottom: -19%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
     width: 40px;
@@ -268,6 +339,17 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
     background: #eeeeee;
     border-radius: 5px;
 }
+
+#about-part .item1 i{
+    position: absolute;
+    top: 121%;
+    right: 48%;
+}
+
+#about-part .item1:hover i{
+    color: #fec600;
+}
+
 
 
 #about-part .img .item2{
@@ -314,6 +396,16 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
     border-radius: 5px;
 }
 
+#about-part .item2 i{
+    position: absolute;
+    bottom: 120%;
+    right: 48%;
+}
+
+#about-part .item2:hover i{
+    color: #fec600;
+}
+
 
 
 #about-part .item3{
@@ -322,7 +414,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
     background: #eeeeee;
     text-align: left;
     padding: 35px;
-    margin-top: 105%;
+    margin-top: 100%;
     margin-left: 25px;
     transition: .4s;
 }
@@ -360,6 +452,16 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
     background: #eeeeee;
     border-radius: 5px;
 }
+
+#about-part .item3 i{
+    position: absolute;
+    top: 47%;
+    right: 109%;
+}
+
+#about-part .item3:hover i{
+    color: #fec600;
+}
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
               about-part css  end
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -367,10 +469,784 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
               portfolio-part css start
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 #portfolio-part{
-    margin-top: 270px;
+    background: url(../images/portfolio-bg.png)no-repeat center;
+    background-size: cover;
+    margin-top: 240px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0% 100%);
 }
+
+#portfolio-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+
+#portfolio-part .title{
+    padding-top: 100px;
+}
+
+#portfolio-part .title h1{
+    color: #fff;
+}
+
+#portfolio-part .title p{
+    color: #d4d4d4;
+}
+
+#portfolio-part .portfolio{
+    margin-top: 50px;
+    padding-bottom: 120px;
+}
+
+#portfolio-part .portfolio img{
+    width: 100%;
+}
+
+#portfolio-part .portfolio .img{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#portfolio-part .portfolio .img .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, .6);
+    border: 1px solid #fff;
+    transition: .4s;
+    opacity: 0;
+}
+
+#portfolio-part .portfolio .img .overlay i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#portfolio-part .portfolio .img:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
+
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
               portfolio-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              service-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#service-part{
+    margin-top: 50px;
+}
+
+#service-part .service-item{
+    margin-top: 100px;
+    position: relative;
+}
+
+#service-part .service-item h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #111111;
+    margin-top: 70px;
+}
+
+#service-part .service-item p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #444444;
+    background: #f1f1f1;
+    padding: 30px;
+    width: 455px;
+    position: relative;
+}
+
+#service-part .service-item .shape{
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-radius: 5px;
+}
+
+#service-part .service-item .item2 .shape,
+#service-part .service-item .item4 .shape{
+    left: 99%;
+}
+
+#service-part .service-item .img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #eeeeee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .4s;
+}
+
+#service-part .service-item img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#service-part .service-item .item2 img{
+    width: 65%;
+}
+
+#service-part .service-item:after{
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 49.7%;
+    background: url(../images/line.png);
+    width: 1px;
+    height: 105%;
+    z-index: -1;
+}
+
+#service-part .up{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #111111;
+    color: #111111;
+    position: absolute;
+    top: -50px;
+    left: 48%;
+    transition: .4s;
+}
+
+#service-part .down{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #111111;
+    color: #111111;
+    position: absolute;
+    bottom: -60px;
+    left: 48%;
+    transition: .4s;
+}
+
+#service-part .up:hover,
+#service-part .down:hover{
+    background: #fec600;
+    border: 1px solid #fec600;
+}
+
+#service-part .service-item .slick-center .img{
+    background: #fec600;
+    transform: scale(1.4) translate(-50%, -50%);
+    position: absolute;
+    top: 56%;
+    left: 56%;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              service-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              testimonial-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#testimonial-part{
+    background: url(../images/team-banner.png) no-repeat center;
+    background-size: cover;
+    margin-top: 100px;
+/*    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);*/
+}
+
+#testimonial-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#testimonial-part .testimonial1-img{
+    width: 100px !important;
+    height: 100px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    position: relative;
+    overflow: hidden;
+    margin-top: 50px;
+    outline: 0;
+}
+
+#testimonial-part .testimonial1-img img{
+    position: absolute;
+    top: 10px;
+    left: 4px;
+}
+
+#testimonial-part .slider-img{
+    position: relative;
+}
+
+#testimonial-part .slider-img:after{
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50px;
+    width: 1px;
+    height: 113%;
+    background: url(../images/line2.png) repeat-y;
+    z-index: -1;
+}
+
+#testimonial-part .overlay .testimonial1-img .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, .5);
+}
+
+#testimonial-part .up{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    position: absolute;
+    top: -50px;
+    left: 30px;
+    transition: .4s;
+}
+
+#testimonial-part .down{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #fff;
+    color: #fff;
+    position: absolute;
+    bottom: -90px;
+    left: 30px;
+    transition: .4s;
+}
+
+#testimonial-part .up:hover,
+#testimonial-part .down:hover{
+    background: #fec600;
+    border: 1px solid #fec600;
+    color: #111111;
+}
+
+
+#testimonial-part .slick-center .testimonial1-img{
+    background: #fec600;
+}
+
+#testimonial-part .slick-center .overlay{
+    opacity: 0;
+}
+
+
+
+
+
+#testimonial-part .details .text{
+    background: #f1f1f1;
+    width: 88%;
+    padding: 60px 30px;
+    position: relative;
+    margin-left: 30px;
+}
+
+#testimonial-part .details .text h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #111111;
+}
+
+#testimonial-part .details .text i{
+    color: #fec600;
+}
+
+#testimonial-part .details .text h4{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #111111;
+    margin-top: 10px;
+}
+
+#testimonial-part .details .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #444444;
+    width: 740px;
+    margin-top: 30px;
+}
+
+#testimonial-part .details .text h6{
+    font-family: 'Sacramento', cursive;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #111111;
+    text-align: right;
+    margin-top: 20px;
+}
+
+#testimonial-part .details {
+    position: relative;
+}
+
+#testimonial-part .details .shape{
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 35px;
+    transform: translate(-50%) rotate(45deg);
+    border-radius: 10px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              testimonial-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              pricing-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#pricing-part{
+    margin-top: 50px;
+}
+
+#pricing-part .price-item{
+    background: #f1f1f1;
+    position: relative;
+    transition: .4s;
+}
+
+#pricing-part .price-item h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    background: #444444;
+    color: #fff;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    clip-path: polygon(0px 0px, 100% 0, 100% 64%, 0 90%);
+    transition: .4s;
+}
+
+#pricing-part .price-item .round{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #f1f1f1;
+    border: 1px solid #444444;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#pricing-part .price-item p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: capitalize;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #444444;
+    text-align: center;
+    margin: 4px auto;
+    padding-top: 10px;
+    transition: .4s;
+}
+
+#pricing-part .price-item span{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 29px;
+    font-weight: 500;
+}
+
+#pricing-part .price-item ul{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pricing-part .price-item ul li a{
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    text-transform: capitalize;
+    margin-top: 30px;
+}
+
+#pricing-part .price-item .btn{
+    background: #444444;
+    display: block;
+    border-radius: 0;
+    clip-path: polygon(0 36%, 100% 0, 100% 100%, 0% 100%);
+    transition: .4s;
+}
+
+#pricing-part .price-item .btn a{
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 18px;
+}
+
+#pricing-part .price-item:hover h2,
+#pricing-part .price-item:hover p,
+#pricing-part .price-item:hover .btn{
+    background: #fec600;
+    color: #222222;
+}
+
+#pricing-part .price-item:hover .btn a{
+    color: #222222;
+}
+
+#pricing-part .price-item:hover{
+    filter: drop-shadow(0px 0px 3px #bdb3b3);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              pricing-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              next1-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#next1-part{
+    margin-top: 100px;
+    background: url(../images/counter-bg.png) no-repeat center;
+    background-size: cover;
+    transform: skewY(-3deg);
+}
+
+#next1-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+
+#next1-part .clients{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin: 30px 0;
+    width: 200px;
+}
+
+#next1-part .clients h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+#next1-part .clients p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    width: 160px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#next1-part .three{
+    margin-left: 37px;
+}
+
+#next1-part .two{
+    margin-left: 37px;
+}
+
+#next1-part .one{
+    margin-left: 37px;
+}
+
+#next1-part .four{
+    margin-left: 38px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              next1-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              team-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#team-part{
+    margin-top: 100px;
+}
+
+#team-part .team-item{
+    border: 1px solid #dddddd;
+    margin-top: 50px;
+}
+
+#team-part .team-item .img{
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    position: relative;
+}
+
+#team-part .team-item .img img{
+    margin-left: 35px;
+    margin-top: 10px;
+}
+
+#team-part .team-item .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: rgba(254, 198, 0, .5);
+    opacity: 0;
+    transition: .4s;
+}
+
+#team-part .team-item .overlay i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #444444;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#team-part .team-item:hover .overlay{
+    opacity: 1;
+    height: 100%;
+}
+
+#team-part .team-item .text{
+    text-align: center;
+    margin-bottom: -20px;
+    transition: .4s;
+}
+
+#team-part .team-item .text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #111111;
+    margin-top: 10px;
+}
+
+#team-part .team-item .text p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #111111;
+    margin-top: 10px;
+}
+
+#team-part .team-item .text .icon i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #444444;
+    color: #444444;
+    margin-top: 20px;
+    margin-left: 10px;
+    opacity: 0;
+    transition: .4s;
+}
+
+#team-part .team-item .text .icon i:hover {
+    background: #fec600;
+    border: 1px solid #fec600;
+}
+
+#team-part .team-item:hover .text .icon i{
+    opacity: 1;
+}
+
+#team-part .team-item:hover .text{
+    margin-bottom: 18px;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              team-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              next2-part css start
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#next2-part{
+    background: #f1f1f1;
+    margin-top: 80px;
+    transform: skewY(-3deg);
+}
+
+#next2-part img{
+    border: 1px solid #cccccc; 
+    margin: 0 10px;
+    padding: 40px 15px;
+    margin: 30px 2px;
+}
+
+#next2-part .slick-center img{
+    border-color: #fec600;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              next2-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              next2-part css  end
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+#footer-part{
+    background: #222222;
+    transform: skewY(-3deg);
+    clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
+}
+
+#footer-part .logo{
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 1px solid #535353;
+}
+
+#footer-part .logo img{
+    transform: skewY(3deg);
+}
+
+#footer{
+    background: #222222;
+    margin-top: -45px;
+    color: #fff;
+    text-align: center;
+    padding-top: 100px;
+    clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+}
+
+#footer .part1{
+    border-right: 1px solid #555555;
+}
+
+#footer .noborder{
+    border: none;
+}
+
+#footer .part1 i{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #fec600;
+    color: #353535;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+#footer .part1 p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#footer .bottom h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 60px;
+}
+
+#footer .bottom .icon i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    color: #444444;
+    line-height: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    transition: .4s;
+}
+
+#footer .bottom .icon i:hover{
+    background: #fec600;
+}
+
+#footer-bottom {
+    background: #444444;
+    padding: 20px 0;
+    text-align: center;
+    color: #f1f1f1;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+#footer-bottom span{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fec600;
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+              next2-part css  end
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 
 
