@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hunt The Final Project</title>
     <link rel="stylesheet" href="file:///C:/Users/Windows/Downloads/fontawesome-free-5.14.0-web/css/all.css">
+    <script src="https://kit.fontawesome.com/7fa7e683f2.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
@@ -14,19 +15,20 @@
     <link rel="stylesheet" href="css/venobox.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                     menu-part start
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg sticky-menu">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="logo.png">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -74,8 +76,8 @@
                         <h1>Designer</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                         <div class="button">
-                            <a href="#">view more</a>
-                            <a href="#">hire us</a>
+                            <a class="yellow" href="#">view more</a>
+                            <a class="red" href="#">hire us</a>
                         </div>
                     </div>
                 </div>
@@ -89,8 +91,8 @@
                         <h1>Designer</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                         <div class="button">
-                            <a href="#">view more</a>
-                            <a href="#">hire us</a>
+                            <a class="yellow" href="#">view more</a>
+                            <a class="red" href="#">hire us</a>
                         </div>
                     </div>
                 </div>
@@ -104,8 +106,8 @@
                         <h1>Designer</h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                         <div class="button">
-                            <a href="#">view more</a>
-                            <a href="#">hire us</a>
+                            <a class="yellow" href="#">view more</a>
+                            <a class="red" href="#">hire us</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +125,8 @@
             <h1>about us</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loremsum has been the industry's standard dummy text ever since the 1500s.</p>
         </div>
-        <div class="container">
+        <div class="about">
+            <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="item4">
@@ -161,6 +164,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                     about-part  end
@@ -177,7 +181,7 @@
             <div class="container">
                 <div class="portfolio">
                     <div class="row pslider">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="img">
                                 <img src="images/port1.png" alt="port1.png">
                                 <div class="overlay">
@@ -195,7 +199,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="img">
                                 <img src="images/port3.png" alt="port3.png">
                                 <div class="overlay">
@@ -213,7 +217,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="img">
                                 <img src="images/port5.png" alt="port5.png">
                                 <div class="overlay">
@@ -231,7 +235,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="img">
                                 <img src="images/port7.png" alt="port7.png">
                                 <div class="overlay">
@@ -249,9 +253,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="img">
-                                <img src="images/port7.png" alt="port7.png">
+                                <img src="images/port5.png" alt="port5.png">
                                 <div class="overlay">
                                     <a class="venobox" data-gall="gallery01" href="images/port7.png">
                                         <i class="fas fa-search-plus"></i>
@@ -259,7 +263,25 @@
                                 </div>
                             </div>
                             <div class="img">
-                                <img src="images/port8.png" alt="port8.png">
+                                <img src="images/port6.png" alt="port6.png">
+                                <div class="overlay">
+                                    <a class="venobox" data-gall="gallery01" href="images/port8.png">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="img">
+                                <img src="images/port6.png" alt="port6.png">
+                                <div class="overlay">
+                                    <a class="venobox" data-gall="gallery01" href="images/port7.png">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="img">
+                                <img src="images/port5.png" alt="port5.png">
                                 <div class="overlay">
                                     <a class="venobox" data-gall="gallery01" href="images/port8.png">
                                         <i class="fas fa-search-plus"></i>
@@ -362,7 +384,10 @@
         <div class="overlay">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 mid">
+                        <div class="middle">
+                            <img src="images/line2.png" alt="line2.png">
+                        </div>
                         <div class="slider-img">
                             <div class="testimonial1-img">
                                 <img src="images/testimonial1.png" alt="testimonial1.png">
@@ -382,7 +407,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 vejal">
                         <div class="testimonial-details">
                             <div class="details">
                                 <div class="text">
@@ -691,53 +716,57 @@
     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                     footer-part start
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <a class="gotop" href="#"><i class="fas fa-arrow-up"></i></a>
     <footer id="footer-part">
-        <div class="logo">
+        <div class="flogo">
+            <div class="logo">
             <img src="images/logo.png" alt="logo.png">
         </div>
-    </footer>
-    <footer id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="part1">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>1234, Parkstreet Avenue</p>
-                        <p>Newyork City, America.</p>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="part1">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>1234, Parkstreet Avenue</p>
+                            <p>Newyork City, America.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="part1 one">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>+123 4567 8900, +123 0098 7654 +99 0712 36526, +99 3644 36842</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="part1 two">
+                            <i class="fas fa-envelope"></i>
+                            <p>hunt@admin.com,info@hunt.com</p>
+                            <p>personal-portfolio@hunt.com</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="part1 noborder">
+                            <i class="fas fa-globe-americas"></i>
+                            <p>www.hunt-personal-port.com www.portfolio-hunt.com</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="part1">
-                        <i class="fas fa-phone-alt"></i>
-                        <p>+123 4567 8900, +123 0098 7654 +99 0712 36526, +99 3644 36842</p>
+                <div class="bottom">
+                    <h2>follow us</h2>
+                    <div class="icon">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-pinterest-p"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                        <i class="fab fa-behance"></i>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="part1">
-                        <i class="fas fa-envelope"></i>
-                        <p>hunt@admin.com,info@hunt.com</p>
-                        <p>personal-portfolio@hunt.com</p>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="part1 noborder">
-                        <i class="fas fa-globe-americas"></i>
-                        <p>www.hunt-personal-port.com www.portfolio-hunt.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="bottom">
-                <h2>follow us</h2>
-                <div class="icon">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-pinterest-p"></i>
-                    <i class="fab fa-linkedin-in"></i>
-                    <i class="fab fa-behance"></i>
                 </div>
             </div>
         </div>
     </footer>
+
     
     <footer id="footer-bottom">
         <div class="container">
@@ -745,10 +774,11 @@
         </div>
     </footer>
 
+
     <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                     footer-part  end
     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
-    
+
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>

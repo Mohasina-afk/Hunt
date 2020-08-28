@@ -1,67 +1,48 @@
+//fixed/sticky menu @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+$(window).scroll(function(){
+    let scrollamount = $(window).scrollTop()
+    
+    if(scrollamount > 10){
+        $(".sticky-menu").addClass("fixed")
+    }else{
+        $(".sticky-menu").removeClass("fixed")
+    }
+    
+    
+//    if(scrollamount > 500){
+//        $(".gotop").fadeIn
+//    }else{
+//        $(".gotop").fadeOut
+//    }
+})
+
+
+
+//gotop button js @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+$(".gotop").click(function(){
+    $("html,body").animate({
+        scrolltop: 0,
+    },10000)
+})
 
 
 
 
 //banner js @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 $('#banner-part').slick({
-//    dots: false,
-//    infinite: true,
-//    speed: 3000,
-//    slidesToShow: 1,
-//    slidesToScroll: 1,
-//    autoplay: true,
-//    autoplaySpeed: 3000,
-//    arrows: true,
-//    prevArrow: '<i class="fas fa-arrow-left prev"></i>',
-//    nextArrow: '<i class="fas fa-arrow-right next"></i>',
-//    fade: true,
-//    cssEase: 'linear',
-//    responsive: [
-//        {
-//            breakpoint: 1024,
-//            settings: {
-//                slidesToShow: 3,
-//                slidesToScroll: 3,
-//                infinite: true,
-//                dots: true
-//            }
-//    },
-//        {
-//            breakpoint: 600,
-//            settings: {
-//                slidesToShow: 2,
-//                slidesToScroll: 2
-//            }
-//    },
-//        {
-//            breakpoint: 480,
-//            settings: {
-//                slidesToShow: 1,
-//                slidesToScroll: 1
-//            }
-//    }
-//  ]
-//});
-
-
-
-
-// portfolio slick @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-$('.pslider').slick({
     dots: false,
     infinite: true,
     speed: 3000,
-    slidesToShow: 4,
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-//    arrows: true,
-//    prevArrow: '<i class="fas fa-arrow-left prev"></i>',
-//    nextArrow: '<i class="fas fa-arrow-right next"></i>',
-//    fade: true,
-//    cssEase: 'linear',
+    arrows: true,
+    prevArrow: '<i class="fas fa-arrow-left prev"></i>',
+    nextArrow: '<i class="fas fa-arrow-right next"></i>',
+    fade: true,
+    cssEase: 'linear',
     responsive: [
         {
             breakpoint: 1024,
@@ -80,9 +61,51 @@ $('.pslider').slick({
             }
     },
         {
-            breakpoint: 480,
+            breakpoint: 575,
             settings: {
                 slidesToShow: 1,
+                slidesToScroll: 1
+            }
+    }
+  ]
+});
+
+
+
+
+// portfolio slick @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+$('.pslider').slick({
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows: false,
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+    },
+        {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+    },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
     }
@@ -129,12 +152,12 @@ $('.service-item').slick({
         {
             breakpoint: 600,
             settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
     },
         {
-            breakpoint: 480,
+            breakpoint: 575,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -157,6 +180,7 @@ $('.slider-img').slick({
     arrows: true,
     prevArrow: '<i class="fas fa-chevron-up up"></i>',
     nextArrow: '<i class="fas fa-chevron-down down"></i>',
+    asNavFor: '.testimonial-details',
     vertical: true,
     verticalSwiping: true,
     centerMode: true,
@@ -197,11 +221,9 @@ $('.testimonial-details').slick({
     slidesToScroll: 1,
     autoplay: false,
     arrows: false,
-    vertical: true,
-    verticalSwiping: true,
-//    centerMode: true,
-//    centerPadding: '0px',
-//    focusOnSelect: true,
+    asNavFor: '.slider-img',
+    fade: true,
+    cssEase: 'linear',
     responsive: [
         {
             breakpoint: 1024,
@@ -282,8 +304,6 @@ $('.next2-slider').slick({
   ]
 });
  
-
-
 
 
 
