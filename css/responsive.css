@@ -75,6 +75,7 @@
         font-size: 20px;
         top: 60%;
         left: 20px;
+        z-index: 900;
     }
 
     #banner-part .next {
@@ -133,8 +134,8 @@
         justify-content: center;
         align-items: center;
     }
-    
-    #about-part .img img{
+
+    #about-part .img img {
         width: 260px;
         height: 260px;
     }
@@ -155,42 +156,218 @@
     #about-part .about {
         margin-top: -240px;
     }
-    
+
     /*---------------------Portfolio css-------------------------*/
-    #portfolio-part .title{
+    #portfolio-part .title {
         padding-top: 55px;
     }
-    
-    #portfolio-part{
+
+    #portfolio-part {
         margin-top: 40px;
         clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
     }
-    
-    #portfolio-part .portfolio{
+
+    #portfolio-part .portfolio {
         padding-bottom: 50px;
     }
-    
-    #portfolio-part .shape{
+
+    #portfolio-part .shape {
         display: none;
     }
-    
+
     /*---------------------Service css-------------------------*/
-    #service-part .service-item .shape{
+    #service-part .service-item .shape {
         display: none;
     }
+
+    #service-part .service-item .hidden {
+        display: block;
+    }
+
+    #service-part .service-item .res_none {
+        display: none;
+    }
+
+    #service-part .service-item:after {
+        display: none;
+    }
+
+    #service-part .service-item .item1 h2 {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    #service-part .service-item .slick-center .img {
+        background: #f1f1f1;
+        transform: scale(1);
+        left: 40%;
+        margin-top: 25px;
+    }
+
+    #service-part .service-item .item1 p {
+        width: auto;
+        margin-top: 120px;
+    }
+
+    #service-part .service-item .restitle h2 {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    #service-part .service-item .res_img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        margin: 25px auto;
+    }
+
+    #service-part .service-item .item2 p {
+        width: auto;
+        margin-top: 0px;
+        text-align: left;
+    }
+
+    #service-part .service-item .item3 h2 {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    #service-part .service-item .item3 .img {
+        margin-top: 15px;
+    }
+
+    #service-part .service-item .item3 p {
+        width: auto;
+        margin-top: 108px;
+    }
+
+    #service-part .service-item .restitle2 h2 {
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    #service-part .service-item .res_img2 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        margin: 20px auto;
+    }
+
+    #service-part .service-item .item4 p {
+        width: auto;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    #service-part .up {
+        left: 44%;
+    }
+
+    #service-part .down {
+        left: 44%;
+    }
+
+    /*---------------------Testimonial css-------------------------*/
+    #testimonial-part {
+        clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
+    }
+
+    #testimonial-part .overlay {
+        padding-top: 105px;
+        padding-bottom: 80px;
+    }
+
+    #testimonial-part .testimonial1-img {
+        width: 72px !important;
+        height: 72px;
+        border-radius: 50%;
+        margin-left: 23px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+
+    #testimonial-part .testimonial1-img img {
+        top: 7px;
+        left: -11px;
+    }
+
+    #testimonial-part .details .shape {
+        display: none;
+    }
+
+    #testimonial-part .middle {
+        display: none;
+    }
+
+    #testimonial-part .details .shape {
+        display: none;
+    }
+
+    #testimonial-part .details .text {
+        margin-left: 17px;
+        margin-top: 40px;
+    }
+
+    #testimonial-part .details .text p {
+        width: auto;
+    }
+
+    #testimonial-part .slider-img {
+        margin-top: 5px;
+    }
+
+    #testimonial-part .up {
+        left: 42%;
+    }
+
+    #testimonial-part .down {
+        top: 115%;
+        left: 42%;
+        z-index: 999;
+    }
+
+    /*---------------------Counterup css-------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*---------------------footer css-------------------------*/
+    #footer-part .footer .part1 {
+        border: none;
+    }
+
+    #footer-part .footer .one {
+        margin-left: 0;
+        margin-top:30px;
+    }
+
+    #footer-part .footer .two{
+        margin-left: 0;
+        margin-top:30px;
+    }
     
-    #testimonial-part .slick-slide{
-    background: #fec600;
-    transform: scale(1.3);
-    border: none;
+    #footer-part .footer .noborder{
+        margin-top: 30px;
+    }
+
+    #footer-part .footer .one p{
+        margin-left: 26px;
+    }
+    
+    #footer-part .footer .bottom .icon i{
+        margin-left: 5px;
+    }
+
 }
-}
-
-
-
-
-
-
-
-
-
