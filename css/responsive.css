@@ -41,13 +41,17 @@
         text-align: center;
     }
 
-    nav ul li a::after {
+    nav ul li a:after {
         bottom: -10px;
         left: 42%;
     }
 
-    nav ul li a:hover::after {
+    nav ul li a:hover:after {
         width: 16%;
+    }
+
+    .fixed ul li a:after {
+        bottom: -10px;
     }
 
     /*---------------------Banner css-------------------------*/
@@ -129,10 +133,6 @@
     #about-part .img {
         width: 288px;
         height: 288px;
-        border: 1px solid #545454;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     #about-part .img img {
@@ -330,18 +330,10 @@
 
     /*---------------------Counterup css-------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
+    #next1-part .clients {
+        width: 148px;
+        margin: 15px auto;
+    }
 
     /*---------------------footer css-------------------------*/
     #footer-part .footer .part1 {
@@ -350,24 +342,792 @@
 
     #footer-part .footer .one {
         margin-left: 0;
-        margin-top:30px;
-    }
-
-    #footer-part .footer .two{
-        margin-left: 0;
-        margin-top:30px;
-    }
-    
-    #footer-part .footer .noborder{
         margin-top: 30px;
     }
 
-    #footer-part .footer .one p{
+    #footer-part .footer .two {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    #footer-part .footer .noborder {
+        margin-top: 30px;
+    }
+
+    #footer-part .footer .one p {
         margin-left: 26px;
     }
-    
-    #footer-part .footer .bottom .icon i{
+
+    #footer-part .footer .bottom .icon i {
         margin-left: 5px;
     }
 
 }
+
+
+
+@media (min-width:576px) and (max-width:767px) {
+    .title p {
+        width: auto;
+    }
+
+    /*---------------------Navbar css-------------------------*/
+    nav button i {
+        width: 50px;
+        height: 40px;
+        border-radius: 6px;
+        background: #fec600;
+        line-height: 40px !important;
+        margin-right: 10px;
+    }
+
+    nav .navbar-brand {
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    nav .navbar-nav {
+        background: #222222;
+        margin: 20px !important;
+        margin-bottom: 0 !important;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+
+    nav button:focus {
+        outline: 0;
+    }
+
+    nav ul li {
+        margin-top: 15px;
+    }
+
+    nav ul li a {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav ul li a::after {
+        bottom: -10px;
+        left: 45%;
+    }
+
+    nav ul li a:hover::after {
+        width: 10%;
+    }
+
+    .fixed ul li a::after {
+        bottom: -10px;
+    }
+
+    /*---------------------Banner css-------------------------*/
+    #banner-part .text {
+        padding-top: 165px;
+        padding-bottom: 120px;
+    }
+
+    #banner-part .prev {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+        top: 63%;
+        left: 50px;
+        z-index: 900;
+    }
+
+    #banner-part .next {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+        top: 63%;
+        right: 50px;
+    }
+
+    #banner-part .text a {
+        padding: 10px 15px !important;
+    }
+
+    /*---------------------About css-------------------------*/
+    #about-part .shape {
+        display: none;
+    }
+
+    #about-part i {
+        display: none;
+    }
+
+    #about-part .item4 p {
+        width: auto;
+        margin-left: 0;
+    }
+
+    #about-part .item4 {
+        width: 360px;
+        text-align: center;
+        margin: 100% auto;
+    }
+
+    #about-part .item3 {
+        width: 360px;
+        text-align: center;
+        margin-left: 75px;
+        margin-top: 50%;
+    }
+
+    #about-part .img {
+        width: 288px;
+        height: 288px;
+        margin: -270px auto;
+    }
+
+    #about-part .img img {
+        width: 260px;
+        height: 260px;
+    }
+
+    #about-part .img .overlay {
+        width: 260px;
+        height: 260px;
+    }
+
+    #about-part .img .item1 {
+        top: -70%;
+        left: -35px;
+    }
+
+    #about-part .img .item2 {
+        bottom: -70%;
+        left: -35px
+    }
+
+    #about-part .about {
+        margin-top: -460px;
+    }
+
+    /*---------------------Portfolio css-------------------------*/
+    #portfolio-part .title {
+        padding-top: 55px;
+    }
+
+    #portfolio-part {
+        margin-top: 40px;
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    }
+
+    #portfolio-part .portfolio {
+        padding-bottom: 50px;
+    }
+
+    /*---------------------Service css-------------------------*/
+    #service-part .service-item .shape {
+        display: none;
+    }
+
+    #service-part .service-item .hidden {
+        display: block;
+    }
+
+    #service-part .service-item .res_none {
+        display: none;
+    }
+
+    #service-part .service-item:after {
+        display: none;
+    }
+
+    #service-part .service-item {
+        text-align: center;
+    }
+
+    #service-part .service-item .item1 p {
+        margin-top: 80px;
+        width: auto;
+        padding: 28px;
+    }
+
+    #service-part .service-item .item1 .img {
+        margin-top: 37px;
+    }
+
+    #service-part .service-item .item1 h2 {
+        margin-top: 1px;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #service-part .service-item .slick-center .img {
+        margin-top: 7px !important;
+    }
+
+    #service-part .service-item .item2 p {
+        margin-top: 0;
+        width: auto;
+        padding: 29px;
+    }
+
+    #service-part .service-item .restitle h2 {
+        margin-top: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #service-part .service-item .res_img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        margin: 5px auto;
+    }
+
+    #service-part .service-item .item3 h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #service-part .service-item .item3 .img {
+        margin-top: 45px;
+    }
+
+    #service-part .service-item .item3 p {
+        width: auto;
+        margin-top: 80px;
+        padding: 29px;
+    }
+
+    #service-part .service-item .restitle2 h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    #service-part .service-item .res_img2 {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        margin: 20px auto;
+    }
+
+    #service-part .service-item .item4 p {
+        width: auto;
+        margin-top: -7px;
+        text-align: center;
+        padding: 26px;
+        margin-bottom: 2px;
+    }
+
+    #service-part .service-item .slick-center .img {
+        background: #f1f1f1;
+        transform: scale(1);
+        left: 43%;
+        margin-top: 7px;
+    }
+
+
+    #service-part .up {
+        left: 47%;
+    }
+
+    #service-part .down {
+        left: 47%;
+    }
+
+
+    /*---------------------Testimonial css-------------------------*/
+    #testimonial-part {
+        clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%);
+    }
+
+    #testimonial-part .overlay {
+        padding-top: 105px;
+        padding-bottom: 80px;
+    }
+
+    #testimonial-part .details .shape {
+        display: none;
+    }
+
+    #testimonial-part .middle {
+        display: none;
+    }
+
+    #testimonial-part .details .shape {
+        display: none;
+    }
+
+    #testimonial-part .details .text {
+        margin-top: 40px;
+    }
+
+    #testimonial-part .details .text p {
+        width: auto;
+    }
+
+    #testimonial-part .up {
+        left: 46%;
+    }
+
+    #testimonial-part .down {
+        top: 115%;
+        left: 46%;
+        z-index: 999;
+    }
+
+    #testimonial-part .testimonial1-img {
+        width: 85px !important;
+        height: 85px;
+        border-radius: 50%;
+        margin-top: 30px;
+        margin-left: 78px;
+        margin-bottom: 20px;
+    }
+
+    #testimonial-part .testimonial1-img img {
+        top: 5px;
+        left: -5px;
+    }
+
+    /*---------------------Counterup css-------------------------*/
+
+    #next1-part .clients {
+        width: 148px;
+        margin: 15px auto;
+    }
+
+    #next1-part .one {
+        margin-right: 10px;
+    }
+
+    #next1-part .two {
+        margin-left: 10px;
+    }
+
+    /*---------------------footer css-------------------------*/
+    #footer-part .footer .part1 {
+        border: none;
+    }
+
+    #footer-part .footer .one {
+        margin-left: 0;
+    }
+
+    #footer-part .footer .two {
+        margin-left: -20px;
+        margin-top: 30px;
+        border-right: 1px solid #555555;
+    }
+
+    #footer-part .footer .noborder {
+        margin-top: 30px;
+    }
+
+    #footer-part .footer .bottom .icon i {
+        margin-left: 5px;
+    }
+
+    #footer-part .footer .bright {
+        border-right: 1px solid #555555;
+    }
+
+}
+
+
+
+@media (min-width:768px) and (max-width:991px) {
+
+    /*---------------------Navbar css-------------------------*/
+    nav .navbar-brand {
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    nav button i {
+        width: 50px;
+        height: 40px;
+        border-radius: 6px;
+        background: #fec600;
+        line-height: 40px !important;
+        margin-right: 10px;
+    }
+
+    nav button:focus {
+        outline: 0;
+    }
+
+    nav .navbar-nav {
+        background: #222222;
+        margin: 20px !important;
+        margin-bottom: 0 !important;
+        padding-top: 10px;
+        padding-bottom: 25px;
+    }
+
+    nav ul li {
+        margin-top: 15px;
+    }
+
+    nav ul li a {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    nav ul li a:after {
+        bottom: -10px;
+        left: 46%;
+    }
+
+    nav ul li a:hover:after {
+        width: 8%;
+    }
+
+    .fixed ul li a:after {
+        bottom: -10px;
+    }
+
+    /*---------------------Banner css-------------------------*/
+    #banner-part .text {
+        padding-top: 165px;
+        padding-bottom: 120px;
+    }
+
+    #banner-part .prev {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+        top: 63%;
+        left: 50px;
+        z-index: 900;
+    }
+
+    #banner-part .next {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 20px;
+        top: 63%;
+        right: 50px;
+    }
+
+    #banner-part .text a {
+        padding: 10px 15px !important;
+    }
+
+    /*---------------------About css-------------------------*/
+    #about-part .about {
+        margin-top: 30px;
+    }
+
+    #about-part .img {
+        width: 230px;
+        height: 230px;
+    }
+
+    #about-part .img img {
+        width: 205px;
+        height: 205px;
+    }
+
+    #about-part .img .overlay {
+        width: 205px;
+        height: 205px;
+    }
+
+    #about-part .img .item1 {
+        top: -120%;
+    }
+
+    #about-part .img .item1 .shape {
+        bottom: -35px;
+    }
+
+    #about-part .img .item1 p {
+        width: auto;
+    }
+
+    #about-part .img .item2 {
+        bottom: -120%;
+    }
+
+    #about-part .img .item2 p {
+        width: auto;
+    }
+
+    #about-part .item4 {
+        margin-top: 115%;
+    }
+
+    #about-part .item4 p {
+        width: auto;
+    }
+
+    #about-part .item4 i {
+        left: 115%;
+    }
+
+    #about-part .item3 {
+        margin-top: 118%;
+    }
+
+    #about-part .item3 p {
+        width: 150px;
+    }
+
+    #about-part .item3 i {
+        right: 116%;
+    }
+
+    /*---------------------Portfolio css-------------------------*/
+    #portfolio-part {
+        margin-top: 270px;
+    }
+
+    /*---------------------Service css-------------------------*/
+    #service-part .up {
+        left: 47%;
+    }
+
+    #service-part .down {
+        left: 47%;
+    }
+
+    #service-part .service-item p {
+        width: auto;
+    }
+
+    #service-part .service-item .item2 .shape,
+    #service-part .service-item .item4 .shape {
+        left: 94%;
+    }
+
+    #service-part .service-item h2 {
+        margin-top: 115px;
+    }
+
+    #service-part .service-item:after {
+        height: 104%;
+    }
+
+    /*---------------------Testimonial css-------------------------*/
+    #testimonial-part .details .text p {
+        width: auto;
+    }
+
+    #testimonial-part .up {
+        left: 56px;
+    }
+
+    #testimonial-part .down {
+        left: 56px;
+    }
+
+    #testimonial-part .vejal {
+        margin-top: 5px;
+    }
+
+    /*---------------------Counterup css-------------------------*/
+
+    #next1-part .clients {
+        width: 132px;
+        margin: 15px auto;
+    }
+
+    #next1-part .clients p {
+        width: auto;
+    }
+
+    /*---------------------Team css-------------------------*/
+    #team-part .team-item .text .icon i {
+        margin-left: 5px;
+    }
+
+    /*---------------------footer css-------------------------*/
+    #footer-part .footer .part1 {
+        border: none;
+    }
+
+    #footer-part .footer .one {
+        margin-left: 0;
+    }
+
+    #footer-part .footer .two {
+        margin-left: -20px;
+        margin-top: 30px;
+        border-right: 1px solid #555555;
+    }
+
+    #footer-part .footer .noborder {
+        margin-top: 30px;
+    }
+
+    #footer-part .footer .bottom .icon i {
+        margin-left: 5px;
+    }
+
+    #footer-part .footer .bright {
+        border-right: 1px solid #555555;
+    }
+
+}
+
+
+@media (min-width:991px) and (max-width:1199px) {
+
+    /*---------------------Navbar css-------------------------*/
+    nav ul li a {
+        margin-left: 15px;
+    }
+
+    /*---------------------About css-------------------------*/
+    #about-part .about {
+        margin-top: 30px;
+    }
+
+    #about-part .img {
+        width: 230px;
+        height: 230px;
+        margin-left: auto;
+    }
+
+    #about-part .img img {
+        width: 205px;
+        height: 205px;
+    }
+
+    #about-part .img .overlay {
+        width: 205px;
+        height: 205px;
+    }
+
+    #about-part .img .item1 {
+        top: -119%;
+        left: 0;
+    }
+
+    #about-part .img .item1 .shape {
+        bottom: -17%;
+        left: 49%;
+    }
+
+    #about-part .img .item1 p {
+        width: auto;
+    }
+
+    #about-part .img .item2 {
+        bottom: -120%;
+        left: 0px;
+    }
+
+    #about-part .img .item2 p {
+        width: auto;
+    }
+
+    #about-part .item4 {
+        left: 40px;
+        margin-top: 98%;
+    }
+
+    #about-part .item4 p {
+        width: auto;
+    }
+
+    #about-part .item4 i {
+        left: 118%;
+    }
+
+    #about-part .item3 i {
+        right: 119%;
+    }
+
+    #about-part .item3 p {
+        width: auto;
+    }
+
+    /*---------------------Portfolio css-------------------------*/
+
+    #portfolio-part {
+        margin-top: 270px;
+    }
+
+    /*---------------------Service css-------------------------*/
+    #service-part .up {
+        left: 47.5%;
+    }
+
+    #service-part .down {
+        left: 47.5%;
+    }
+
+    #service-part .service-item p {
+        width: auto;
+    }
+
+    #service-part .service-item .item2 .shape,
+    #service-part .service-item .item4 .shape {
+        left: 96%;
+    }
+
+    /*---------------------Testimonial css-------------------------*/
+    #testimonial-part .details .text p {
+        width: auto;
+    }
+
+    #testimonial-part .testimonial1-img {
+        margin-left: 15px;
+    }
+
+    #testimonial-part .up {
+        left: 46px
+    }
+
+    #testimonial-part .down {
+        left: 46px
+    }
+
+    #testimonial-part .vejal {
+        margin-top: 38px;
+    }
+
+    /*---------------------Counterup css-------------------------*/
+
+    #next1-part .clients {
+        width: 170px;
+        margin: 15px auto;
+    }
+
+    #next1-part .clients p {
+        width: auto;
+    }
+
+    /*---------------------Team css-------------------------*/
+    #team-part .team-item .text .icon i {
+        margin-left: 5px;
+    }
+
+    /*---------------------footer css-------------------------*/
+    #footer-part .footer .one {
+        margin-left: -22px;
+    }
+    
+    #footer-part .footer .part1 p{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
