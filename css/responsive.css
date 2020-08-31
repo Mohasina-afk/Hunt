@@ -99,7 +99,7 @@
 
     #about-part .item1 p,
     #about-part .item2 p {
-        width: 225px !important;
+        width: 260px !important;
     }
 
     #about-part .item4 {
@@ -115,7 +115,7 @@
     #about-part .item3 {
         margin-left: 0;
         text-align: center;
-        margin-top: 93%;
+        margin-top: 265px;
     }
 
     #about-part .item3 p {
@@ -133,6 +133,8 @@
     #about-part .img {
         width: 288px;
         height: 288px;
+        margin: 0 auto;
+        margin-top: 270px;
     }
 
     #about-part .img img {
@@ -147,10 +149,12 @@
 
     #about-part .img .item1 {
         top: -83%;
+        left: -17px;
     }
 
     #about-part .img .item2 {
         bottom: -82%;
+        left: -17px;
     }
 
     #about-part .about {
@@ -280,12 +284,13 @@
     }
 
     #testimonial-part .testimonial1-img {
-        width: 72px !important;
-        height: 72px;
+        width: 65px !important;
+        height: 65px;
         border-radius: 50%;
-        margin-left: 23px;
+        margin-left: 17px;
         margin-top: 25px;
         margin-bottom: 15px;
+        margin-right: 17px;
     }
 
     #testimonial-part .testimonial1-img img {
@@ -316,6 +321,8 @@
 
     #testimonial-part .slider-img {
         margin-top: 5px;
+        width: 300px;
+        margin: 0 auto;
     }
 
     #testimonial-part .up {
@@ -326,6 +333,11 @@
         top: 115%;
         left: 42%;
         z-index: 999;
+    }
+    
+    /*---------------------Counterup css-------------------------*/
+    #team-part .team-item .img img{
+        margin-left: 75px;
     }
 
     /*---------------------Counterup css-------------------------*/
@@ -1114,20 +1126,3 @@
         font-size: 14px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
