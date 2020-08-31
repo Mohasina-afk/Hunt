@@ -1,6 +1,6 @@
 //fixed/sticky menu @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
-$(window).scroll(function () {
+$(window).scroll(function() {
     let scrollamount = $(window).scrollTop()
 
     if (scrollamount > 10) {
@@ -10,21 +10,21 @@ $(window).scroll(function () {
     }
 
 
-        if(scrollamount > 400){
-            $(".gotop").fadeIn();
-        }else{
-            $(".gotop").fadeOut();
-        }
+    if (scrollamount > 400) {
+        $(".gotop").fadeIn();
+    } else {
+        $(".gotop").fadeOut();
+    }
 })
 
-
+console.log($(location).attr('href'));
 
 //gotop button js @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-//$(".gotop").click(function(){
-//    $("html,body").animate({
-//        scrolltop: 0,
-//    },10000)
-//})
+$(".gotop").click(function() {
+    $("html, body").animate({
+        scrollTop: 0,
+    }, 1000)
+});
 
 
 
@@ -43,8 +43,7 @@ $('#banner-part').slick({
     nextArrow: '<i class="fas fa-arrow-right next"></i>',
     fade: true,
     cssEase: 'linear',
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 991,
             settings: {
                 slidesToShow: 1,
@@ -52,23 +51,26 @@ $('#banner-part').slick({
                 infinite: true,
                 dots: false
             }
-    },
+        },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-    },
+        },
         {
             breakpoint: 575,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-    }
-  ]
+        }
+    ]
 });
+
+
+
 
 
 
@@ -85,8 +87,7 @@ $('.pslider').slick({
     autoplaySpeed: 3000,
     arrows: false,
 
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 991,
             settings: {
                 slidesToShow: 4,
@@ -94,22 +95,22 @@ $('.pslider').slick({
                 infinite: true,
                 dots: false
             }
-    },
+        },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
-    },
+        },
         {
             breakpoint: 575,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
-    }
-  ]
+        }
+    ]
 });
 
 
@@ -139,8 +140,7 @@ $('.service-item').slick({
     centerMode: true,
     centerPadding: '0px',
     focusOnSelect: true,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 991,
             settings: {
                 slidesToShow: 3,
@@ -153,22 +153,22 @@ $('.service-item').slick({
                 centerPadding: '0px',
                 focusOnSelect: true,
             }
-    },
+        },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-    },
+        },
         {
             breakpoint: 575,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-    }
-  ]
+        }
+    ]
 });
 
 
@@ -191,8 +191,7 @@ $('.slider-img').slick({
     centerMode: true,
     centerPadding: '0px',
     focusOnSelect: true,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 991,
             settings: {
                 slidesToShow: 3,
@@ -205,7 +204,7 @@ $('.slider-img').slick({
                 centerPadding: '0px',
                 focusOnSelect: true,
             }
-    },
+        },
         {
             breakpoint: 767,
             settings: {
@@ -217,7 +216,7 @@ $('.slider-img').slick({
                 centerPadding: '0px',
                 focusOnSelect: true,
             }
-    },
+        },
         {
             breakpoint: 575,
             settings: {
@@ -229,8 +228,8 @@ $('.slider-img').slick({
                 centerPadding: '0px',
                 focusOnSelect: true,
             }
-    }
-  ]
+        }
+    ]
 });
 
 
@@ -244,8 +243,7 @@ $('.testimonial-details').slick({
     asNavFor: '.slider-img',
     fade: true,
     cssEase: 'linear',
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 991,
             settings: {
                 slidesToShow: 1,
@@ -253,22 +251,22 @@ $('.testimonial-details').slick({
                 infinite: true,
                 dots: false
             }
-    },
+        },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-    },
+        },
         {
             breakpoint: 575,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
             }
-    }
-  ]
+        }
+    ]
 });
 
 
@@ -297,8 +295,7 @@ $('.team-slider').slick({
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 991,
             settings: {
                 slidesToShow: 3,
@@ -306,22 +303,22 @@ $('.team-slider').slick({
                 infinite: true,
                 dots: false
             }
-    },
+        },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 2
             }
-    },
+        },
         {
             breakpoint: 576,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-    }
-  ]
+        }
+    ]
 });
 
 
@@ -341,8 +338,7 @@ $('.next2-slider').slick({
     centerMode: true,
     centerPadding: '0px',
     focusOnSelect: true,
-    responsive: [
-        {
+    responsive: [{
             breakpoint: 991,
             settings: {
                 slidesToShow: 5,
@@ -350,20 +346,37 @@ $('.next2-slider').slick({
                 infinite: true,
                 dots: false,
             }
-    },
+        },
         {
             breakpoint: 767,
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1
             }
-    },
+        },
         {
             breakpoint: 575,
             settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
+        }
+    ]
+});
+
+
+//next2-slider js @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+var $navElem = $(".nav-link");
+$(".nav-item:first-child").addClass("custom-active");
+$(".each-part").scrollspy({
+    outCallback: function($elem) {
+        $navElem.filter('[href="#' + $elem.attr('id') + '"]').removeClass('custom-active');
+        $(".nav-item:first-child").removeClass("custom-active");
+
+    },
+    inCallback: function($elem) {
+        $("nav-item:first-child").removeClass('custom-active');
+        $navElem.filter('[href="#' + $elem.attr('id') + '"]').addClass('custom-active');
+        //window.location.hash = $elem.attr('id');
     }
-  ]
 });
