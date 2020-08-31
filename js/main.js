@@ -1,3 +1,9 @@
+//Collapse js &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+$(".navbar-collapse a").click(function(){
+    (".navbar-collapse").collapse('hide')
+})
+
+
 //fixed/sticky menu @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 $(window).scroll(function () {
@@ -15,18 +21,20 @@ $(window).scroll(function () {
         }else{
             $(".gotop").fadeOut();
         }
+    
 })
 
 
 
 //gotop button js @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-//$(".gotop").click(function(){
-//    $("html,body").animate({
-//        scrolltop: 0,
-//    },10000)
-//})
+$(".gotop").click(function(){
+    $("html, body").animate({
+        scrolltop: 0,
+    },10000)
+})
 
-
+jQuery("tr","#ctl00_MainContent_MyUserControl");
+jQuery("#ctl00_MainContent_MyUserControl").find("tr");
 
 
 //banner js @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@

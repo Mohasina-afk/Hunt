@@ -35,9 +35,11 @@ h1,h2,h3,h4,h5,h6,p {
     margin-top: 25px;
 }
 
+/*
 html, body{
     scroll-behavior: smooth;
 }
+*/
 
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
               menu-part css start
@@ -89,6 +91,14 @@ nav ul li a:hover{
     color: #fec600;
 }
 
+nav ul li .active:after{
+    width: 100%;
+}
+
+nav ul li .active{
+    color: #fec600;
+}
+
 
 
 .fixed {
@@ -97,12 +107,12 @@ nav ul li a:hover{
     left: 0;
     background: #222222;
     border: 1px solid #222222;
-    padding: 13px 0 !important;
+    padding: 10px 0 !important;
     transition: 1s;
 }
 
 .fixed ul li a:after{
-    bottom: -35px;
+    bottom: -29px;
 }
 /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
               menu-part css end
@@ -250,7 +260,7 @@ nav ul li a:hover{
               about-part css start
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 #about-part{
-    margin-top: 50px;
+    padding-top: 80px;
 }
 
 #about-part .img{
@@ -590,7 +600,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
               service-part css start
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 #service-part{
-    margin-top: 50px;
+    padding-top: 80px;
 }
 
 #service-part .service-item{
@@ -901,7 +911,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
               pricing-part css start
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 #pricing-part{
-    margin-top: 50px;
+    padding-top: 80px;
 }
 
 #pricing-part .price-item{
@@ -1080,7 +1090,7 @@ box-shadow: 0px 0px 9px -1px rgba(0,0,0,0.35);
               team-part css start
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
 #team-part{
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 #team-part .team-item{
