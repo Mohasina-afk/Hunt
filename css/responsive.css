@@ -53,6 +53,10 @@
     .fixed ul li a:after {
         bottom: -10px;
     }
+    
+    nav ul li .active:after{
+    width: 16%;
+}
 
     /*---------------------Banner css-------------------------*/
     #banner-part .text {
